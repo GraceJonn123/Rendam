@@ -33,7 +33,7 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     private List<SlideMenuItem> list = new ArrayList<>();
     private ContentFragment contentFragment;
     private ViewAnimator viewAnimator;
-    private int res = R.drawable.rebel;
+    private int res = R.drawable.jiji;
     private LinearLayout linearLayout;
 
 
@@ -41,7 +41,7 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        contentFragment = ContentFragment.newInstance(R.drawable.rebel);
+        contentFragment = ContentFragment.newInstance(R.drawable.jiji);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, contentFragment)
                 .commit();
@@ -64,13 +64,13 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
     private void createMenuList() {
         SlideMenuItem menuItem0 = new SlideMenuItem(ContentFragment.CLOSE, R.drawable.icn_close);
         list.add(menuItem0);
-        SlideMenuItem menuItem = new SlideMenuItem(ContentFragment.AUDIO, R.drawable.rebel);
+        SlideMenuItem menuItem = new SlideMenuItem(ContentFragment.AUDIO, R.drawable.jiji);
         list.add(menuItem);
-        SlideMenuItem menuItem2 = new SlideMenuItem(ContentFragment.VIDEO, R.drawable.rebel);
+        SlideMenuItem menuItem2 = new SlideMenuItem(ContentFragment.VIDEO, R.drawable.jie);
         list.add(menuItem2);
-        SlideMenuItem menuItem3 = new SlideMenuItem(ContentFragment.BUY, R.drawable.rebel);
+        SlideMenuItem menuItem3 = new SlideMenuItem(ContentFragment.BUY, R.drawable.jij);
         list.add(menuItem3);
-        SlideMenuItem menuItem4 = new SlideMenuItem(ContentFragment.ABOUT, R.drawable.rebel);
+        SlideMenuItem menuItem4 = new SlideMenuItem(ContentFragment.ABOUT, R.drawable.jijii);
         list.add(menuItem4);
     }
 
@@ -164,13 +164,13 @@ public class MainActivity extends ActionBarActivity implements ViewAnimator.View
             case ContentFragment.CLOSE:
                 return screenShotable;
             case ContentFragment.AUDIO:
-                return replaceFragment(screenShotable, position, R.drawable.rebel);
+                return replaceFragment(screenShotable, position, R.drawable.jiji);
             case ContentFragment.VIDEO:
-                return replaceFragment(screenShotable, position, R.drawable.rebel);
+                return replaceFragment(screenShotable, position, R.drawable.jie);
             case ContentFragment.BUY:
-                return replaceFragment(screenShotable, position, R.drawable.rebel);
+                return replaceFragment(screenShotable, position, R.drawable.jij);
             case ContentFragment.ABOUT:
-                return replaceFragment(screenShotable, position, R.drawable.rebel);
+                return replaceFragment(screenShotable, position, R.drawable.jijii);
             default:
                 return replaceFragment(screenShotable, position,res);
         }

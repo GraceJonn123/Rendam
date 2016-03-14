@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.jaykayitare.rebel.R;
+import com.example.jaykayitare.rendom.R;
 
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 
